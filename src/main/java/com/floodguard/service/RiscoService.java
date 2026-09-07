@@ -1,4 +1,4 @@
-package main.java.com.floodguard.service;
+package com.floodguard.service;
 
 import com.floodguard.model.NivelRisco;
 import org.springframework.stereotype.Service;

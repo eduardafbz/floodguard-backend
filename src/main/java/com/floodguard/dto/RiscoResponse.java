@@ -1,4 +1,4 @@
-package main.java.com.floodguard.dto;
+package com.floodguard.dto;
 
 import com.floodguard.model.NivelRisco;
 

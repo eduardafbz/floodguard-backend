@@ -4,6 +4,7 @@
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/controller/RegiaoController.java
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/dto/OcorrenciaRequest.java
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/dto/RiscoResponse.java
+/Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/exception/RecursoNaoEncontradoException.java
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/model/Alerta.java
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/model/NivelRisco.java
 /Users/eduardafbz/floodguard-backend/src/main/java/com/floodguard/model/Ocorrencia.java

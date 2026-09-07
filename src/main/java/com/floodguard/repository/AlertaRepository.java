@@ -1,4 +1,4 @@
-package main.java.com.floodguard.repository;
+package com.floodguard.repository;
 
 import com.floodguard.model.Alerta;
 import org.springframework.data.jpa.repository.JpaRepository;

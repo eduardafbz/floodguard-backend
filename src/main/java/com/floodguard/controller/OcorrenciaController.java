@@ -1,4 +1,4 @@
-package main.java.com.floodguard.controller;
+package com.floodguard.controller;
 
 import com.floodguard.dto.OcorrenciaRequest;
 import com.floodguard.model.Ocorrencia;
@@ -22,9 +22,7 @@ public class OcorrenciaController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Ocorrencia criar(
-            @Valid @RequestBody OcorrenciaRequest request) {
-
+    public Ocorrencia criar(@Valid @RequestBody OcorrenciaRequest request) {
         return service.criar(request);
     }
 

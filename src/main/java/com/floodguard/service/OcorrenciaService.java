@@ -1,4 +1,4 @@
-package main.java.com.floodguard.service;
+package com.floodguard.service;
 
 import com.floodguard.dto.OcorrenciaRequest;
 import com.floodguard.model.Ocorrencia;
@@ -34,12 +34,7 @@ public class OcorrenciaService {
     }
 
     public long contarOcorrenciasRecentes() {
-
-        LocalDateTime limite =
-                LocalDateTime.now().minusHours(2);
-
-        return repository
-                .findByDataHoraAfter(limite)
-                .size();
+        LocalDateTime limite = LocalDateTime.now().minusHours(2);
+        return repository.countByDataHoraAfter(limite);
     }
 }

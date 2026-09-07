@@ -1,4 +1,4 @@
-package main.java.com.floodguard.dto;
+package com.floodguard.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package main.java.com.floodguard.controller;
+package com.floodguard.controller;
 
 import com.floodguard.model.Alerta;
 import com.floodguard.service.AlertaService;

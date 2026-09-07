@@ -1,4 +1,4 @@
-package main.java.com.floodguard.model;
+package com.floodguard.model;
 
 import jakarta.persistence.*;
 
