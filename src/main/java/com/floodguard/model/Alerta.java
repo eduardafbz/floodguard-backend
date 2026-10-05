@@ -12,6 +12,10 @@ public class Alerta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @ManyToOne
+    @JoinColumn(name = "regiao_id", nullable = false)
+    private Regiao regiao;
+
     @Column(nullable = false)
     private String titulo;
 
@@ -34,6 +38,14 @@ public class Alerta {
 
     public Long getId() {
         return id;
+    }
+
+    public Regiao getRegiao() {
+        return regiao;
+    }
+
+    public void setRegiao(Regiao regiao) {
+        this.regiao = regiao;
     }
 
     public String getTitulo() {

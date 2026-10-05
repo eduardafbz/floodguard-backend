@@ -5,8 +5,8 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "ocorrencias")
-public class Ocorrencia {
+@Table(name = "leituras_chuva")
+public class LeituraChuva {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,18 +17,15 @@ public class Ocorrencia {
     private Regiao regiao;
 
     @Column(nullable = false)
-    private String descricao;
+    private double chuvaPorHora;
 
-    @Column(nullable = false)
-    private double latitude;
-
-    @Column(nullable = false)
-    private double longitude;
+    @Column(length = 50)
+    private String fonte;
 
     @Column(nullable = false)
     private LocalDateTime dataHora;
 
-    public Ocorrencia() {
+    public LeituraChuva() {
     }
 
     public Long getId() {
@@ -43,28 +40,20 @@ public class Ocorrencia {
         this.regiao = regiao;
     }
 
-    public String getDescricao() {
-        return descricao;
+    public double getChuvaPorHora() {
+        return chuvaPorHora;
     }
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
+    public void setChuvaPorHora(double chuvaPorHora) {
+        this.chuvaPorHora = chuvaPorHora;
     }
 
-    public double getLatitude() {
-        return latitude;
+    public String getFonte() {
+        return fonte;
     }
 
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
+    public void setFonte(String fonte) {
+        this.fonte = fonte;
     }
 
     public LocalDateTime getDataHora() {
